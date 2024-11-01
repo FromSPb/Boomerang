@@ -6,6 +6,7 @@ class View {
     this.checkDieEnemy = false;
     this.end = false;
   }
+
   render(track) {
     const yourTeamName = 'DreamTeam';
     console.clear();
@@ -13,13 +14,14 @@ class View {
     console.log('\n\n');
     console.log(`Created by "${yourTeamName}" with love`);
   }
+
   checkWin() {
     if (this.end) {
       console.log("You win!");
     }
   }
 
-  rega() {
+  registration() {
     return inquirer
       .prompt([
         { type: 'input', name: 'username', message: 'Введи имя:' },
@@ -33,7 +35,6 @@ class View {
             { name: 'Супермен :🦸‍♂️', value: '🦸‍♂️' },
             { name: 'Ковбой: 🤠', value: '🤠' },
             { name: 'Робот: 🤖', value: '🤖' },
-            { name: 'Твой батя:  ', value: ' ' }
           ],
         },
         {
@@ -45,7 +46,8 @@ class View {
             { name: 'Гаечный ключ :🔧', value: '🔧' },
             { name: 'Огонь :🔥', value: '🔥' },
             { name: 'Топор :🪓', value: '🪓' },
-            { name: 'Кувалда :🔨', value: '🔨' },
+            { name: 'Иссекай автобус:🚐', value: '🚐' },
+            { name: 'Самокатчик:🛴', value: '🛴' },
           ],
         },
       ])

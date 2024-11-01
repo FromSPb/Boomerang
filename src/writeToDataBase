@@ -1,0 +1,9 @@
+const {GameScore, default: gamescore} = require('../db/models/gamescore')
+async function writeDB(name,score) {
+    await GameScore.create({
+    name,
+    score
+    })
+}
+
+module.exports = writeDB

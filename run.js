@@ -5,8 +5,8 @@ const View = require('./src/View');
 
 // Создание экземпляра класса View
 const view = new View();
-// Вызов метода rega() из класса View и запуск игры после завершения
-view.rega()
+// Вызов метода registration() из класса View и запуск игры после завершения
+view.registration()
   .then((answers) => {
     console.log('Выбор игрока:', answers);
 
@@ -21,5 +21,5 @@ const game = new Game({
   game.play();
 })
   .catch((error) => {
-    console.error('Ошибка при вызове rega():', error);
+    console.error('Ошибка при вызове registration():', error);
   });
