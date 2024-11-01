@@ -36,12 +36,12 @@ module.exports = Boomerang;
   // }
 // 
   // moveLeft() {
-    Идём влево.
+    //Идём влево.
     // this.position -= 1;
   // }
 // 
   // moveRight() {
-    Идём вправо.
+    //Идём вправо.
     // this.position += 1;
   // }
 // }

@@ -30,7 +30,7 @@ function runInteractiveConsole(step) {
       }
 
       // Прерывание программы.
-      if (key.ctrl && key.name === 'c') {
+      if (key.ctrl && key.name === "c") {
         process.exit();
       }
     }

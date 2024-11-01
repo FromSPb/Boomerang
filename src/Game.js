@@ -14,8 +14,8 @@ class Game {
   constructor({ trackLength, heroSkin, heroWeapon }) {
     this.trackLength = trackLength;
     this.hero = new Hero({position:0}); // Герою можно аргументом передать бумеранг.
-    this.enemy = new Enemy({position:1});
-    this.heroWeapon = new Boomerang()
+    this.enemy = new Enemy({position:31});
+    this.weapon = new Boomerang()
     this.view = new View();
     this.track = [];
     this.regenerateTrack();
@@ -35,7 +35,6 @@ class Game {
     this.track[this.hero.position] = this.heroSkin;
     this.track[this.enemy.position] = this.enemy.skin;
     this.track[this.weapon.position] = this.heroWeapon;
-
   }
 
   check() {
